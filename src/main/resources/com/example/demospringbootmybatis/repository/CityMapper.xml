@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demospringbootmybatis.repository.CityMapper">
+
+    <!-- resultType의 city는 dto의 @Alias에서 지정 한 값-->
+    <select id="selectCityById" resultType="city">
+        SELECT
+        *
+          FROM CITY
+         WHERE NAME = #{name}
+    </select>
+
+    <select id="selectAllCity" resultType="city">
+        SELECT ID
+              ,NAME
+              ,COUNTRY
+              ,POPULATION
+          FROM CITY
+    </select>
+
+    <insert id="insertCity">
+      INSERT INTO CITY (NAME, COUNTRY, POPULATION)
+      VALUES (#{name}, #{country}, #{population})
+    </insert>
+
+</mapper>

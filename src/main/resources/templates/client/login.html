@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+</head>
+<body>
+<header th:replace="include/header :: header" />
+<h3>로그인</h3>
+<form class="login" action="/login_s" method="post">
+    <fieldset>
+        <label for="UserId" />
+        <input type="text" id="UserId" name="UserId" placeholder="아이디" maxlength="10">
+    </fieldset>
+    <fieldset>
+        <label for="UserPw"/>
+        <input type="password" id="UserPw" name="UserPw" placeholder="비밀번호" maxlength="10">
+    </fieldset>
+    <fieldset>
+        <input type="submit" value="로그인">
+    </fieldset>
+</form>
+<a href="#">아이디 찾기</a>
+<a href="#">비밀번호 찾기</a>
+<a href="/join_g"> 회원가입</a>
+
+<footer th:replace="include/footer :: foter" />
+</body>
+</html>
