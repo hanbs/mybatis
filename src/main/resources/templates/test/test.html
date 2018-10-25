@@ -2,13 +2,16 @@
 <html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>test</title>
+    <title>Title</title>
 </head>
 <body>
-테스트와
-<p th:text="${test}">테스트</p>
-테스트의 사이 입니다.
+<tr>
+<td>
+    <!-- controller에서 addObject에 변수 이름을 제대로 넘겼는데, 안 찍힘.. -->
 
-</form>
+    <div th:text="${id}"></div>
+
+</td>
+</tr>
 </body>
 </html>

@@ -13,5 +13,7 @@ public interface CityMapper {
     City selectCityById(String name);
 
     List<City> selectAllCity();
+
     void insertCity(City city);
 }
+

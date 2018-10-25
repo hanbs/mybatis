@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<header th:replace="include/header :: header"></header>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>회원가입</h3>
+
+<form action="/join_s" method="post">
+
+    <fieldset>
+        <label for="client_password">이름</label>
+        <input type="text" id="client_name" th:name="client_name" placeholder="이름">
+    </fieldset>
+
+    <fieldset>
+        <label for="client_id">아이디</label>
+        <input type="text" id="client_id" th:name="client_id" placeholder="아이디">
+    </fieldset>
+
+    <fieldset>
+        <label for="client_password">비밀번호</label>
+        <input type="text" id="client_age" th:name="client_age" placeholder="나이">
+    </fieldset>
+
+    <fieldset>
+        <label for="client_password">비밀번호</label>
+        <input type="password" id="client_password" th:name="client_password" placeholder="비밀번호">
+    </fieldset>
+
+    <fieldset>
+        <label for="client_repassword">비밀번호 확인</label>
+        <input type="password" id="client_repassword" th:name="client_repassword" placeholder="비밀번호 확인">
+    </fieldset>
+
+    <hr>
+    <fieldset>
+        <input type="submit" value="회원가입">
+    </fieldset>
+
+</form>
+
+<footer th:replace="include/footer :: footer"></footer>
+</body>
+</html>

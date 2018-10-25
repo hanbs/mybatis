@@ -6,13 +6,6 @@
 <mapper namespace="com.example.demospringbootmybatis.repository.CityMapper">
 
     <!-- resultType의 city는 dto의 @Alias에서 지정 한 값-->
-    <select id="selectCityById" resultType="city">
-        SELECT
-        *
-          FROM CITY
-         WHERE NAME = #{name}
-    </select>
-
     <select id="selectAllCity" resultType="city">
         SELECT ID
               ,NAME
@@ -20,6 +13,16 @@
               ,POPULATION
           FROM CITY
     </select>
+
+
+
+    <select id="selectCityById" resultType="city">
+        SELECT
+        *
+          FROM CITY
+         WHERE NAME = #{NAME}
+    </select>
+
 
     <insert id="insertCity">
       INSERT INTO CITY (NAME, COUNTRY, POPULATION)

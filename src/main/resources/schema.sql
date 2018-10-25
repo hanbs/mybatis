@@ -10,7 +10,7 @@ INSERT  INTO CITY (NAME, COUNTRY, POPULATION) VALUES ('한국', 'KR', 20000);
 
 
 -- drop table if exists MEMBER;
-
+--
 -- CREATE TABLE TR_MEMBER(
 -- USER_ID VARCHAR(20) NOT NULL,
 -- USER_PW VARCHAR(20) NOT NULL,
@@ -20,4 +20,5 @@ INSERT  INTO CITY (NAME, COUNTRY, POPULATION) VALUES ('한국', 'KR', 20000);
 -- USER_ADDR VARCHAR(20),
 -- PRIMARY KEY(USER_ID)
 -- );
-
+--
+-- INSERT INTO TR_MEMBER values ('han', 1234, '한범석', 'han@naver.com', '010-1234-5678', '서울시 마포구')

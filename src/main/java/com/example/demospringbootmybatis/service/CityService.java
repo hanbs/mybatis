@@ -15,7 +15,6 @@ public class CityService {
     CityMapper cityMapper;
 
     public City getCityById(String name) {
-        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> "+name);
         return cityMapper.selectCityById(name);
     }
 
@@ -23,9 +22,7 @@ public class CityService {
         return cityMapper.selectAllCity();
     }
 
-
     public void addCity(City city) {
         cityMapper.insertCity(city);
     }
-
 }

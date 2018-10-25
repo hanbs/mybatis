@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>header</title>
-</head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<title>개인 홈페이지</title>
+<link rel="stylesheet" href="classpath:templates/static/css.css">
+<script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body>
 <header th:fragment="header">
-    <a href="/">메인으로</a>
+    <a href="/brian">개인홈피로</a>
 
-    <li><a href="/login_g">로그인</a></li>
-    <li><a href="/join_g">회원가입</a> </li>
+    <li class="dropdown_wrap"><a href="/login_g">로그인</a></li>
+    <li><a href="/join_g">회원가입</a></li>
+    </ul>
+    </li>
+    </ul>
 </header>
 </body>
 </html>

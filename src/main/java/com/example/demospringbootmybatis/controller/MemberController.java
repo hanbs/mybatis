@@ -7,10 +7,12 @@
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.stereotype.Controller;
 //import org.springframework.ui.Model;
-//import org.springframework.web.bind.annotation.*;
+//import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.PostMapping;
+//
 //import javax.servlet.http.HttpSession;
 //
-//@RestController
+//@Controller
 //public class MemberController {
 //
 //    @Autowired
@@ -19,16 +21,16 @@
 //    Logger logger = LoggerFactory.getLogger(getClass()); // logging 하기 위해 지정
 //
 //    // 메인화면
-//    @GetMapping(value = "/brian") // 처음 url에 /brian이라고 받으면 main.html로 리턴.
-//    public String main() {
+//    @GetMapping(value = {"/", "/brian", "han"}) // 처음 url에 /나 brian이라고 받으면 main.html로 리턴.
+//    public String index() {
 //
 //        logger.info(">>>>>>>>> 메인 화면 입니다. >>>>>>>>");
 //
-//    return "main/main";
+//    return "client/main";
 //    }
 //
 //    // 로그인 페이지 이동
-//    @GetMapping(value = "login_g")
+//    @GetMapping(value = "/login_g")
 //    public String login_g() {
 //        logger.info(">>>>>>> 로그인 페이지로 이동 >>>>>>>>");
 //        return "client/login";
